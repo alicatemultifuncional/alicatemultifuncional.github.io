@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="posts">
+    {% for post in paginator.posts %}
+    <div class="post-teaser">
+      <div class="excerpt">
+        {{ post.content }}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
